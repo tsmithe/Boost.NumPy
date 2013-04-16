@@ -71,6 +71,7 @@ execute_process(COMMAND "${PYTHON_EXECUTABLE}" "-c"
 print('.'.join(str(v) for v in sys.version_info));
 print(s.PREFIX);
 print(s.get_python_inc());
+print(s.get_python_inc(plat_specific=True));
 print(s.get_python_lib(plat_specific=True));
 print(s.get_config_var('SO'));
 print(hasattr(sys, 'gettotalrefcount')+0);
