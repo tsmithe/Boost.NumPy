@@ -112,7 +112,7 @@ install(DIRECTORY boost
 
 # add submodules
 ADD_SUBDIRECTORY(libs/numpy/src)
-ADD_SUBDIRECTORY(libs/numpy/example)
+#ADD_SUBDIRECTORY(libs/numpy/example)
 ADD_SUBDIRECTORY(libs/numpy/test)
 
 if (BUILD_DOCS)
