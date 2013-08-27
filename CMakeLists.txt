@@ -25,10 +25,10 @@ find_package(NumPy REQUIRED)
 
 # find boost
 # 
-# set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_STATIC_LIBS ON)
 # set(Boost_USE_MULTITHREADED ON) 
 # set(Boost_USE_STATIC_RUNTIME ON)
-FIND_PACKAGE(Boost COMPONENTS python-py33 REQUIRED)
+FIND_PACKAGE(Boost COMPONENTS python-py27 REQUIRED)
 
 message( STATUS "found boost:"
   "\nINCLUDE: ${Boost_INCLUDE_DIRS}"
@@ -113,7 +113,7 @@ install(DIRECTORY boost
 # add submodules
 ADD_SUBDIRECTORY(libs/numpy/src)
 #ADD_SUBDIRECTORY(libs/numpy/example)
-ADD_SUBDIRECTORY(libs/numpy/test)
+#ADD_SUBDIRECTORY(libs/numpy/test)
 
 if (BUILD_DOCS)
   ADD_SUBDIRECTORY(libs/numpy/doc)
