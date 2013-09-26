@@ -19,7 +19,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
     CACHE PATH "Output directory for executables and DLL's.")
 
 # find required python packages
-find_package(PythonInterp REQUIRED)
+if(PYVERSION)
+  find_package(PythonInterp ${PYVERSION} EXACT)
+else()
+  find_package(PythonInterp REQUIRED)
+endif()  
 find_package(PythonLibsNew REQUIRED)
 find_package(NumPy REQUIRED)
 
