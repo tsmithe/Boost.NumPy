@@ -51,7 +51,7 @@ message( STATUS "found boost:"
 if (WIN32)
   set(LIBRARY_TYPE STATIC CACHE STRING "type of library to make for boost_numpy")
 else()
-  set(LIBRARY_TYPE SHARED CACHE STRING "type of library to make for boost_numpy")
+  set(LIBRARY_TYPE STATIC CACHE STRING "type of library to make for boost_numpy")
 endif()
 
 # variable controlling building of documentation

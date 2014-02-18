@@ -1,4 +1,4 @@
-add_library(boost_numpy STATIC # ${LIBRARY_TYPE}
+add_library(boost_numpy ${LIBRARY_TYPE}
   # header files
   ../../../boost/numpy/dtype.hpp
   ../../../boost/numpy/internal.hpp
